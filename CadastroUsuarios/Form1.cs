@@ -1,10 +1,15 @@
 namespace CadastroUsuarios
 {
-    public partial class Form1 : Form
+    public partial class frmUsuarios : Form
     {
-        public Form1()
+        public frmUsuarios()
         {
             InitializeComponent();
+        }
+
+        private void frmUsuarios_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
