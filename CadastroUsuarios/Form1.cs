@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace CadastroUsuarios
 {
     public partial class frmUsuarios : Form
@@ -10,6 +12,73 @@ namespace CadastroUsuarios
         private void frmUsuarios_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            Process.Start("calc.exe");
+        }
+
+        private void btnNotepad_Click(object sender, EventArgs e)
+        {
+            Process.Start("notepad.exe");
+        }
+
+        private void btnVSCode_Click(object sender, EventArgs e)
+        {
+            Process.Start("C:\\Program Files\\Microsoft VS Code\\Code.exe");
+        }
+
+        private void btnGoogle_Click(object sender, EventArgs e)
+        {
+            String path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+            String url = "https://fatectq.cps.sp.gov.br/";
+            Process.Start(path, url);
+        }
+
+        private void btnSysInfo_Click(object sender, EventArgs e)
+        {
+            string plataforma = Environment.OSVersion.Platform.ToString();
+            string versao = Environment.OSVersion.VersionString.ToString();
+            string servicepack = Environment.OSVersion.ServicePack.ToString();
+
+            MessageBox.Show(
+                "Plataforma: " + plataforma + Environment.NewLine +
+                "Versão do S.O.: " + versao + Environment.NewLine +
+                "Service Pack : " + servicepack + Environment.NewLine,
+                "Confirmação",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Information
+            );
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            string username = Environment.UserName;
+            string machineName = Environment.MachineName;
+            string userFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+
+            MessageBox.Show(
+                "Usuário: " + username + Environment.NewLine +
+                "Computador: " + machineName + Environment.NewLine +
+                "Pasta do usuário: " + username + Environment.NewLine,
+                "Confirmação",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Information
+        );
+        }
+
+        private void btnExibir_Click(object sender, EventArgs e)
+        {
+            lsbDados.Items.Clear();
+            lsbDados.Items.Add("Dados do usuário");
+            lsbDados.Items.Add("RM: "+txtRM.Text);
+            lsbDados.Items.Add("CPF: "+mskCPF.Text);
         }
     }
 }
