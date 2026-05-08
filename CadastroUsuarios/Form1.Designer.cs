@@ -28,289 +28,343 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtRM = new TextBox();
-            lblRM = new Label();
-            lblCPF = new Label();
-            lblNome = new Label();
-            txtNome = new TextBox();
-            mskCPF = new MaskedTextBox();
-            dateTimePicker1 = new DateTimePicker();
-            comboBox1 = new ComboBox();
-            lblDataNascimento = new Label();
-            lblSexo = new Label();
-            lblNaturalidade = new Label();
-            comboBox2 = new ComboBox();
-            btnExibir = new Button();
-            btnLimpar = new Button();
-            btnSair = new Button();
-            btnVSCode = new Button();
-            btnNotepad = new Button();
-            btnCalc = new Button();
-            btnUser = new Button();
-            btnSysInfo = new Button();
-            bntGoogle = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarios));
             lsbDados = new ListBox();
+            bntGoogle = new Button();
+            btnSysInfo = new Button();
+            btnUser = new Button();
+            btnCalc = new Button();
+            btnVSCode = new Button();
+            btnSair = new Button();
+            btnLimpar = new Button();
+            btnExibir = new Button();
+            comboBox2 = new ComboBox();
+            lblNaturalidade = new Label();
+            lblSexo = new Label();
+            lblDataNascimento = new Label();
+            comboBox1 = new ComboBox();
+            dateTimePicker1 = new DateTimePicker();
+            mskCPF = new MaskedTextBox();
+            txtNome = new TextBox();
+            lblNome = new Label();
+            lblCPF = new Label();
+            lblRM = new Label();
+            txtRM = new TextBox();
+            btnNotepad = new Button();
+            pnlPrincipal = new Panel();
+            pictureBox1 = new PictureBox();
+            pnlPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // txtRM
+            // lsbDados
             // 
-            txtRM.Location = new Point(50, 56);
-            txtRM.MaxLength = 6;
-            txtRM.Name = "txtRM";
-            txtRM.Size = new Size(100, 23);
-            txtRM.TabIndex = 0;
-            // 
-            // lblRM
-            // 
-            lblRM.AutoSize = true;
-            lblRM.Location = new Point(50, 38);
-            lblRM.Name = "lblRM";
-            lblRM.Size = new Size(25, 15);
-            lblRM.TabIndex = 1;
-            lblRM.Text = "RM";
-            // 
-            // lblCPF
-            // 
-            lblCPF.AutoSize = true;
-            lblCPF.Location = new Point(156, 38);
-            lblCPF.Name = "lblCPF";
-            lblCPF.Size = new Size(28, 15);
-            lblCPF.TabIndex = 3;
-            lblCPF.Text = "CPF";
-            // 
-            // lblNome
-            // 
-            lblNome.AutoSize = true;
-            lblNome.Location = new Point(287, 38);
-            lblNome.Name = "lblNome";
-            lblNome.Size = new Size(40, 15);
-            lblNome.TabIndex = 5;
-            lblNome.Text = "Nome";
-            // 
-            // txtNome
-            // 
-            txtNome.Location = new Point(287, 56);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(269, 23);
-            txtNome.TabIndex = 4;
-            // 
-            // mskCPF
-            // 
-            mskCPF.Location = new Point(156, 56);
-            mskCPF.Mask = "000\\.000\\.000-00";
-            mskCPF.Name = "mskCPF";
-            mskCPF.Size = new Size(125, 23);
-            mskCPF.TabIndex = 6;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(50, 105);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(231, 23);
-            dateTimePicker1.TabIndex = 7;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Feminino", "Masculino" });
-            comboBox1.Location = new Point(287, 105);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
-            comboBox1.TabIndex = 8;
-            // 
-            // lblDataNascimento
-            // 
-            lblDataNascimento.AutoSize = true;
-            lblDataNascimento.Location = new Point(50, 87);
-            lblDataNascimento.Name = "lblDataNascimento";
-            lblDataNascimento.Size = new Size(112, 15);
-            lblDataNascimento.TabIndex = 9;
-            lblDataNascimento.Text = "Data de nascimento";
-            // 
-            // lblSexo
-            // 
-            lblSexo.AutoSize = true;
-            lblSexo.Location = new Point(287, 87);
-            lblSexo.Name = "lblSexo";
-            lblSexo.Size = new Size(31, 15);
-            lblSexo.TabIndex = 10;
-            lblSexo.Text = "Sexo";
-            // 
-            // lblNaturalidade
-            // 
-            lblNaturalidade.AutoSize = true;
-            lblNaturalidade.Location = new Point(426, 87);
-            lblNaturalidade.Name = "lblNaturalidade";
-            lblNaturalidade.Size = new Size(75, 15);
-            lblNaturalidade.TabIndex = 12;
-            lblNaturalidade.Text = "Naturalidade";
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Jaboticabal - SP", "Guariba - SP", "Matão - SP", "Monte Alto - SP", "Taquaritinga - SP", "Santa Ernestina - SP" });
-            comboBox2.Location = new Point(435, 105);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 11;
-            // 
-            // btnExibir
-            // 
-            btnExibir.Location = new Point(50, 144);
-            btnExibir.Name = "btnExibir";
-            btnExibir.Size = new Size(100, 36);
-            btnExibir.TabIndex = 13;
-            btnExibir.Text = "Exibir";
-            btnExibir.UseVisualStyleBackColor = true;
-            btnExibir.Click += btnExibir_Click;
-            // 
-            // btnLimpar
-            // 
-            btnLimpar.Location = new Point(156, 144);
-            btnLimpar.Name = "btnLimpar";
-            btnLimpar.Size = new Size(109, 36);
-            btnLimpar.TabIndex = 14;
-            btnLimpar.Text = "Limpar";
-            btnLimpar.UseVisualStyleBackColor = true;
-            // 
-            // btnSair
-            // 
-            btnSair.Location = new Point(280, 144);
-            btnSair.Name = "btnSair";
-            btnSair.Size = new Size(90, 36);
-            btnSair.TabIndex = 15;
-            btnSair.Text = "Sair";
-            btnSair.UseVisualStyleBackColor = true;
-            btnSair.Click += btnSair_Click;
-            // 
-            // btnVSCode
-            // 
-            btnVSCode.Location = new Point(271, 218);
-            btnVSCode.Name = "btnVSCode";
-            btnVSCode.Size = new Size(99, 50);
-            btnVSCode.TabIndex = 18;
-            btnVSCode.Text = "Visual Studio Code";
-            btnVSCode.UseVisualStyleBackColor = true;
-            btnVSCode.Click += btnVSCode_Click;
-            // 
-            // btnNotepad
-            // 
-            btnNotepad.Location = new Point(156, 218);
-            btnNotepad.Name = "btnNotepad";
-            btnNotepad.Size = new Size(109, 50);
-            btnNotepad.TabIndex = 17;
-            btnNotepad.Text = "Bloco de Notas";
-            btnNotepad.UseVisualStyleBackColor = true;
-            btnNotepad.Click += btnNotepad_Click;
-            // 
-            // btnCalc
-            // 
-            btnCalc.Location = new Point(50, 218);
-            btnCalc.Name = "btnCalc";
-            btnCalc.Size = new Size(100, 50);
-            btnCalc.TabIndex = 16;
-            btnCalc.Text = "Calculadora";
-            btnCalc.UseVisualStyleBackColor = true;
-            btnCalc.Click += btnCalc_Click;
-            // 
-            // btnUser
-            // 
-            btnUser.Location = new Point(271, 277);
-            btnUser.Name = "btnUser";
-            btnUser.Size = new Size(99, 45);
-            btnUser.TabIndex = 21;
-            btnUser.Text = "Informações do usuário";
-            btnUser.UseVisualStyleBackColor = true;
-            btnUser.Click += btnUser_Click;
-            // 
-            // btnSysInfo
-            // 
-            btnSysInfo.Location = new Point(156, 274);
-            btnSysInfo.Name = "btnSysInfo";
-            btnSysInfo.Size = new Size(109, 48);
-            btnSysInfo.TabIndex = 20;
-            btnSysInfo.Text = "Informações do sistema";
-            btnSysInfo.UseVisualStyleBackColor = true;
-            btnSysInfo.Click += btnSysInfo_Click;
+            lsbDados.Font = new Font("Segoe UI", 12F);
+            lsbDados.FormattingEnabled = true;
+            lsbDados.ItemHeight = 21;
+            lsbDados.Location = new Point(402, 164);
+            lsbDados.Name = "lsbDados";
+            lsbDados.Size = new Size(220, 193);
+            lsbDados.TabIndex = 22;
             // 
             // bntGoogle
             // 
-            bntGoogle.Location = new Point(50, 274);
+            bntGoogle.Font = new Font("Segoe UI", 12F);
+            bntGoogle.Location = new Point(24, 307);
             bntGoogle.Name = "bntGoogle";
-            bntGoogle.Size = new Size(100, 48);
+            bntGoogle.Size = new Size(110, 50);
             bntGoogle.TabIndex = 19;
             bntGoogle.Text = "Google Fatec";
             bntGoogle.UseVisualStyleBackColor = true;
             bntGoogle.Click += btnGoogle_Click;
             // 
-            // lsbDados
+            // btnSysInfo
             // 
-            lsbDados.FormattingEnabled = true;
-            lsbDados.ItemHeight = 15;
-            lsbDados.Location = new Point(385, 144);
-            lsbDados.Name = "lsbDados";
-            lsbDados.Size = new Size(171, 184);
-            lsbDados.TabIndex = 22;
+            btnSysInfo.Font = new Font("Segoe UI", 12F);
+            btnSysInfo.Location = new Point(145, 307);
+            btnSysInfo.Name = "btnSysInfo";
+            btnSysInfo.Size = new Size(110, 50);
+            btnSysInfo.TabIndex = 20;
+            btnSysInfo.Text = "Informações do sistema";
+            btnSysInfo.UseVisualStyleBackColor = true;
+            btnSysInfo.Click += btnSysInfo_Click;
+            // 
+            // btnUser
+            // 
+            btnUser.Font = new Font("Segoe UI", 12F);
+            btnUser.Location = new Point(272, 307);
+            btnUser.Name = "btnUser";
+            btnUser.Size = new Size(110, 50);
+            btnUser.TabIndex = 21;
+            btnUser.Text = "Informações do usuário";
+            btnUser.UseVisualStyleBackColor = true;
+            btnUser.Click += btnUser_Click;
+            // 
+            // btnCalc
+            // 
+            btnCalc.Font = new Font("Segoe UI", 12F);
+            btnCalc.Location = new Point(24, 238);
+            btnCalc.Name = "btnCalc";
+            btnCalc.Size = new Size(110, 50);
+            btnCalc.TabIndex = 16;
+            btnCalc.Text = "Calculadora";
+            btnCalc.UseVisualStyleBackColor = true;
+            btnCalc.Click += btnCalc_Click;
+            // 
+            // btnVSCode
+            // 
+            btnVSCode.Font = new Font("Segoe UI", 12F);
+            btnVSCode.Location = new Point(272, 238);
+            btnVSCode.Name = "btnVSCode";
+            btnVSCode.Size = new Size(110, 50);
+            btnVSCode.TabIndex = 18;
+            btnVSCode.Text = "Visual Studio Code";
+            btnVSCode.UseVisualStyleBackColor = true;
+            btnVSCode.Click += btnVSCode_Click;
+            // 
+            // btnSair
+            // 
+            btnSair.Font = new Font("Segoe UI", 12F);
+            btnSair.Location = new Point(272, 162);
+            btnSair.Name = "btnSair";
+            btnSair.Size = new Size(110, 50);
+            btnSair.TabIndex = 15;
+            btnSair.Text = "Sair";
+            btnSair.UseVisualStyleBackColor = true;
+            btnSair.Click += btnSair_Click;
+            // 
+            // btnLimpar
+            // 
+            btnLimpar.Font = new Font("Segoe UI", 12F);
+            btnLimpar.Location = new Point(145, 162);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(110, 50);
+            btnLimpar.TabIndex = 14;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = true;
+            // 
+            // btnExibir
+            // 
+            btnExibir.Font = new Font("Segoe UI", 12F);
+            btnExibir.Location = new Point(24, 162);
+            btnExibir.Name = "btnExibir";
+            btnExibir.Size = new Size(110, 50);
+            btnExibir.TabIndex = 13;
+            btnExibir.Text = "Exibir";
+            btnExibir.UseVisualStyleBackColor = true;
+            btnExibir.Click += btnExibir_Click;
+            // 
+            // comboBox2
+            // 
+            comboBox2.Font = new Font("Segoe UI", 12F);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Jaboticabal - SP", "Guariba - SP", "Matão - SP", "Monte Alto - SP", "Taquaritinga - SP", "Santa Ernestina - SP" });
+            comboBox2.Location = new Point(417, 95);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(205, 29);
+            comboBox2.TabIndex = 11;
+            // 
+            // lblNaturalidade
+            // 
+            lblNaturalidade.AutoSize = true;
+            lblNaturalidade.Font = new Font("Segoe UI", 12F);
+            lblNaturalidade.Location = new Point(417, 71);
+            lblNaturalidade.Name = "lblNaturalidade";
+            lblNaturalidade.Size = new Size(100, 21);
+            lblNaturalidade.TabIndex = 12;
+            lblNaturalidade.Text = "Naturalidade";
+            // 
+            // lblSexo
+            // 
+            lblSexo.AutoSize = true;
+            lblSexo.Font = new Font("Segoe UI", 12F);
+            lblSexo.Location = new Point(271, 71);
+            lblSexo.Name = "lblSexo";
+            lblSexo.Size = new Size(43, 21);
+            lblSexo.TabIndex = 10;
+            lblSexo.Text = "Sexo";
+            // 
+            // lblDataNascimento
+            // 
+            lblDataNascimento.AutoSize = true;
+            lblDataNascimento.Font = new Font("Segoe UI", 12F);
+            lblDataNascimento.Location = new Point(130, 71);
+            lblDataNascimento.Name = "lblDataNascimento";
+            lblDataNascimento.Size = new Size(93, 21);
+            lblDataNascimento.TabIndex = 9;
+            lblDataNascimento.Text = "Nascimento";
+            // 
+            // comboBox1
+            // 
+            comboBox1.Font = new Font("Segoe UI", 12F);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Feminino", "Masculino" });
+            comboBox1.Location = new Point(272, 95);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(128, 29);
+            comboBox1.TabIndex = 8;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Font = new Font("Segoe UI", 12F);
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker1.Location = new Point(130, 95);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(126, 29);
+            dateTimePicker1.TabIndex = 7;
+            // 
+            // mskCPF
+            // 
+            mskCPF.Font = new Font("Segoe UI", 12F);
+            mskCPF.Location = new Point(130, 29);
+            mskCPF.Mask = "000\\.000\\.000-00";
+            mskCPF.Name = "mskCPF";
+            mskCPF.Size = new Size(125, 29);
+            mskCPF.TabIndex = 6;
+            // 
+            // txtNome
+            // 
+            txtNome.Font = new Font("Segoe UI", 12F);
+            txtNome.Location = new Point(261, 29);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(361, 29);
+            txtNome.TabIndex = 4;
+            // 
+            // lblNome
+            // 
+            lblNome.AutoSize = true;
+            lblNome.Font = new Font("Segoe UI", 12F);
+            lblNome.Location = new Point(261, 11);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(53, 21);
+            lblNome.TabIndex = 5;
+            lblNome.Text = "Nome";
+            // 
+            // lblCPF
+            // 
+            lblCPF.AutoSize = true;
+            lblCPF.Font = new Font("Segoe UI", 12F);
+            lblCPF.Location = new Point(130, 11);
+            lblCPF.Name = "lblCPF";
+            lblCPF.Size = new Size(37, 21);
+            lblCPF.TabIndex = 3;
+            lblCPF.Text = "CPF";
+            // 
+            // lblRM
+            // 
+            lblRM.AutoSize = true;
+            lblRM.Font = new Font("Segoe UI", 12F);
+            lblRM.Location = new Point(24, 11);
+            lblRM.Name = "lblRM";
+            lblRM.Size = new Size(34, 21);
+            lblRM.TabIndex = 1;
+            lblRM.Text = "RM";
+            // 
+            // txtRM
+            // 
+            txtRM.Font = new Font("Segoe UI", 12F);
+            txtRM.Location = new Point(24, 29);
+            txtRM.MaxLength = 6;
+            txtRM.Name = "txtRM";
+            txtRM.Size = new Size(100, 29);
+            txtRM.TabIndex = 0;
+            // 
+            // btnNotepad
+            // 
+            btnNotepad.Font = new Font("Segoe UI", 12F);
+            btnNotepad.Location = new Point(145, 238);
+            btnNotepad.Name = "btnNotepad";
+            btnNotepad.Size = new Size(110, 50);
+            btnNotepad.TabIndex = 17;
+            btnNotepad.Text = "Bloco de Notas";
+            btnNotepad.UseVisualStyleBackColor = true;
+            btnNotepad.Click += btnNotepad_Click;
+            // 
+            // pnlPrincipal
+            // 
+            pnlPrincipal.Anchor = AnchorStyles.None;
+            pnlPrincipal.BorderStyle = BorderStyle.FixedSingle;
+            pnlPrincipal.Controls.Add(pictureBox1);
+            pnlPrincipal.Controls.Add(btnLimpar);
+            pnlPrincipal.Controls.Add(lsbDados);
+            pnlPrincipal.Controls.Add(txtRM);
+            pnlPrincipal.Controls.Add(btnUser);
+            pnlPrincipal.Controls.Add(lblRM);
+            pnlPrincipal.Controls.Add(btnSysInfo);
+            pnlPrincipal.Controls.Add(lblCPF);
+            pnlPrincipal.Controls.Add(bntGoogle);
+            pnlPrincipal.Controls.Add(txtNome);
+            pnlPrincipal.Controls.Add(btnVSCode);
+            pnlPrincipal.Controls.Add(lblNome);
+            pnlPrincipal.Controls.Add(btnNotepad);
+            pnlPrincipal.Controls.Add(mskCPF);
+            pnlPrincipal.Controls.Add(btnCalc);
+            pnlPrincipal.Controls.Add(dateTimePicker1);
+            pnlPrincipal.Controls.Add(btnSair);
+            pnlPrincipal.Controls.Add(comboBox1);
+            pnlPrincipal.Controls.Add(lblDataNascimento);
+            pnlPrincipal.Controls.Add(btnExibir);
+            pnlPrincipal.Controls.Add(lblSexo);
+            pnlPrincipal.Controls.Add(lblNaturalidade);
+            pnlPrincipal.Controls.Add(comboBox2);
+            pnlPrincipal.Location = new Point(58, 57);
+            pnlPrincipal.Name = "pnlPrincipal";
+            pnlPrincipal.Size = new Size(652, 373);
+            pnlPrincipal.TabIndex = 23;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(24, 68);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 82);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
             // 
             // frmUsuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(611, 381);
-            Controls.Add(lsbDados);
-            Controls.Add(btnUser);
-            Controls.Add(btnSysInfo);
-            Controls.Add(bntGoogle);
-            Controls.Add(btnVSCode);
-            Controls.Add(btnNotepad);
-            Controls.Add(btnCalc);
-            Controls.Add(btnSair);
-            Controls.Add(btnLimpar);
-            Controls.Add(btnExibir);
-            Controls.Add(lblNaturalidade);
-            Controls.Add(comboBox2);
-            Controls.Add(lblSexo);
-            Controls.Add(lblDataNascimento);
-            Controls.Add(comboBox1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(mskCPF);
-            Controls.Add(lblNome);
-            Controls.Add(txtNome);
-            Controls.Add(lblCPF);
-            Controls.Add(lblRM);
-            Controls.Add(txtRM);
+            ClientSize = new Size(763, 514);
+            Controls.Add(pnlPrincipal);
             Name = "frmUsuarios";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro de usuários";
+            WindowState = FormWindowState.Maximized;
             Load += frmUsuarios_Load;
+            pnlPrincipal.ResumeLayout(false);
+            pnlPrincipal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private TextBox txtRM;
-        private Label lblRM;
-        private Label lblCPF;
-        private Label lblNome;
-        private TextBox txtNome;
-        private MaskedTextBox mskCPF;
-        private DateTimePicker dateTimePicker1;
-        private ComboBox comboBox1;
-        private Label lblDataNascimento;
-        private Label lblSexo;
-        private Label lblNaturalidade;
-        private ComboBox comboBox2;
-        private Button btnExibir;
-        private Button btnLimpar;
-        private Button btnSair;
-        private Button btnVSCode;
-        private Button btnNotepad;
-        private Button btnCalc;
-        private Button btnUser;
-        private Button btnSysInfo;
-        private Button bntGoogle;
         private ListBox lsbDados;
+        private Button bntGoogle;
+        private Button btnSysInfo;
+        private Button btnUser;
+        private Button btnCalc;
+        private Button btnVSCode;
+        private Button btnSair;
+        private Button btnLimpar;
+        private Button btnExibir;
+        private ComboBox comboBox2;
+        private Label lblNaturalidade;
+        private Label lblSexo;
+        private Label lblDataNascimento;
+        private ComboBox comboBox1;
+        private DateTimePicker dateTimePicker1;
+        private MaskedTextBox mskCPF;
+        private TextBox txtNome;
+        private Label lblNome;
+        private Label lblCPF;
+        private Label lblRM;
+        private TextBox txtRM;
+        private Button btnNotepad;
+        private Panel pnlPrincipal;
+        private PictureBox pictureBox1;
     }
 }

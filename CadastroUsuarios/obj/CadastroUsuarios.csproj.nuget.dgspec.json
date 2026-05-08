@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wagner\\usuarios\\CadastroUsuarios\\CadastroUsuarios.csproj": {}
+    "D:\\Projetos\\C_Sharp\\usuarios\\CadastroUsuarios\\CadastroUsuarios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wagner\\usuarios\\CadastroUsuarios\\CadastroUsuarios.csproj": {
+    "D:\\Projetos\\C_Sharp\\usuarios\\CadastroUsuarios\\CadastroUsuarios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wagner\\usuarios\\CadastroUsuarios\\CadastroUsuarios.csproj",
+        "projectUniqueName": "D:\\Projetos\\C_Sharp\\usuarios\\CadastroUsuarios\\CadastroUsuarios.csproj",
         "projectName": "CadastroUsuarios",
-        "projectPath": "C:\\Users\\Wagner\\usuarios\\CadastroUsuarios\\CadastroUsuarios.csproj",
+        "projectPath": "D:\\Projetos\\C_Sharp\\usuarios\\CadastroUsuarios\\CadastroUsuarios.csproj",
         "packagesPath": "C:\\Users\\Wagner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wagner\\usuarios\\CadastroUsuarios\\obj\\",
+        "outputPath": "D:\\Projetos\\C_Sharp\\usuarios\\CadastroUsuarios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -71,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
