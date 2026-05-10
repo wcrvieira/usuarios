@@ -38,12 +38,12 @@
             btnSair = new Button();
             btnLimpar = new Button();
             btnExibir = new Button();
-            comboBox2 = new ComboBox();
+            cmbNaturalidade = new ComboBox();
             lblNaturalidade = new Label();
             lblSexo = new Label();
             lblDataNascimento = new Label();
-            comboBox1 = new ComboBox();
-            dateTimePicker1 = new DateTimePicker();
+            cmbSexo = new ComboBox();
+            dtpNascimento = new DateTimePicker();
             mskCPF = new MaskedTextBox();
             txtNome = new TextBox();
             lblNome = new Label();
@@ -62,18 +62,18 @@
             lsbDados.Font = new Font("Segoe UI", 12F);
             lsbDados.FormattingEnabled = true;
             lsbDados.ItemHeight = 21;
-            lsbDados.Location = new Point(402, 164);
+            lsbDados.Location = new Point(402, 217);
             lsbDados.Name = "lsbDados";
-            lsbDados.Size = new Size(220, 193);
-            lsbDados.TabIndex = 22;
+            lsbDados.Size = new Size(260, 193);
+            lsbDados.TabIndex = 15;
             // 
             // bntGoogle
             // 
             bntGoogle.Font = new Font("Segoe UI", 12F);
-            bntGoogle.Location = new Point(24, 307);
+            bntGoogle.Location = new Point(24, 360);
             bntGoogle.Name = "bntGoogle";
             bntGoogle.Size = new Size(110, 50);
-            bntGoogle.TabIndex = 19;
+            bntGoogle.TabIndex = 12;
             bntGoogle.Text = "Google Fatec";
             bntGoogle.UseVisualStyleBackColor = true;
             bntGoogle.Click += btnGoogle_Click;
@@ -81,10 +81,10 @@
             // btnSysInfo
             // 
             btnSysInfo.Font = new Font("Segoe UI", 12F);
-            btnSysInfo.Location = new Point(145, 307);
+            btnSysInfo.Location = new Point(145, 360);
             btnSysInfo.Name = "btnSysInfo";
             btnSysInfo.Size = new Size(110, 50);
-            btnSysInfo.TabIndex = 20;
+            btnSysInfo.TabIndex = 13;
             btnSysInfo.Text = "Informações do sistema";
             btnSysInfo.UseVisualStyleBackColor = true;
             btnSysInfo.Click += btnSysInfo_Click;
@@ -92,10 +92,10 @@
             // btnUser
             // 
             btnUser.Font = new Font("Segoe UI", 12F);
-            btnUser.Location = new Point(272, 307);
+            btnUser.Location = new Point(272, 360);
             btnUser.Name = "btnUser";
             btnUser.Size = new Size(110, 50);
-            btnUser.TabIndex = 21;
+            btnUser.TabIndex = 14;
             btnUser.Text = "Informações do usuário";
             btnUser.UseVisualStyleBackColor = true;
             btnUser.Click += btnUser_Click;
@@ -103,10 +103,10 @@
             // btnCalc
             // 
             btnCalc.Font = new Font("Segoe UI", 12F);
-            btnCalc.Location = new Point(24, 238);
+            btnCalc.Location = new Point(24, 291);
             btnCalc.Name = "btnCalc";
             btnCalc.Size = new Size(110, 50);
-            btnCalc.TabIndex = 16;
+            btnCalc.TabIndex = 9;
             btnCalc.Text = "Calculadora";
             btnCalc.UseVisualStyleBackColor = true;
             btnCalc.Click += btnCalc_Click;
@@ -114,10 +114,10 @@
             // btnVSCode
             // 
             btnVSCode.Font = new Font("Segoe UI", 12F);
-            btnVSCode.Location = new Point(272, 238);
+            btnVSCode.Location = new Point(272, 291);
             btnVSCode.Name = "btnVSCode";
             btnVSCode.Size = new Size(110, 50);
-            btnVSCode.TabIndex = 18;
+            btnVSCode.TabIndex = 11;
             btnVSCode.Text = "Visual Studio Code";
             btnVSCode.UseVisualStyleBackColor = true;
             btnVSCode.Click += btnVSCode_Click;
@@ -125,10 +125,10 @@
             // btnSair
             // 
             btnSair.Font = new Font("Segoe UI", 12F);
-            btnSair.Location = new Point(272, 162);
+            btnSair.Location = new Point(272, 215);
             btnSair.Name = "btnSair";
             btnSair.Size = new Size(110, 50);
-            btnSair.TabIndex = 15;
+            btnSair.TabIndex = 8;
             btnSair.Text = "Sair";
             btnSair.UseVisualStyleBackColor = true;
             btnSair.Click += btnSair_Click;
@@ -136,39 +136,40 @@
             // btnLimpar
             // 
             btnLimpar.Font = new Font("Segoe UI", 12F);
-            btnLimpar.Location = new Point(145, 162);
+            btnLimpar.Location = new Point(145, 215);
             btnLimpar.Name = "btnLimpar";
             btnLimpar.Size = new Size(110, 50);
-            btnLimpar.TabIndex = 14;
+            btnLimpar.TabIndex = 7;
             btnLimpar.Text = "Limpar";
             btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += btnLimpar_Click;
             // 
             // btnExibir
             // 
             btnExibir.Font = new Font("Segoe UI", 12F);
-            btnExibir.Location = new Point(24, 162);
+            btnExibir.Location = new Point(24, 215);
             btnExibir.Name = "btnExibir";
             btnExibir.Size = new Size(110, 50);
-            btnExibir.TabIndex = 13;
+            btnExibir.TabIndex = 6;
             btnExibir.Text = "Exibir";
             btnExibir.UseVisualStyleBackColor = true;
             btnExibir.Click += btnExibir_Click;
             // 
-            // comboBox2
+            // cmbNaturalidade
             // 
-            comboBox2.Font = new Font("Segoe UI", 12F);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Jaboticabal - SP", "Guariba - SP", "Matão - SP", "Monte Alto - SP", "Taquaritinga - SP", "Santa Ernestina - SP" });
-            comboBox2.Location = new Point(417, 95);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(205, 29);
-            comboBox2.TabIndex = 11;
+            cmbNaturalidade.Font = new Font("Segoe UI", 12F);
+            cmbNaturalidade.FormattingEnabled = true;
+            cmbNaturalidade.Items.AddRange(new object[] { "Jaboticabal - SP", "Guariba - SP", "Matão - SP", "Monte Alto - SP", "Taquaritinga - SP", "Santa Ernestina - SP" });
+            cmbNaturalidade.Location = new Point(417, 148);
+            cmbNaturalidade.Name = "cmbNaturalidade";
+            cmbNaturalidade.Size = new Size(245, 29);
+            cmbNaturalidade.TabIndex = 5;
             // 
             // lblNaturalidade
             // 
             lblNaturalidade.AutoSize = true;
             lblNaturalidade.Font = new Font("Segoe UI", 12F);
-            lblNaturalidade.Location = new Point(417, 71);
+            lblNaturalidade.Location = new Point(417, 124);
             lblNaturalidade.Name = "lblNaturalidade";
             lblNaturalidade.Size = new Size(100, 21);
             lblNaturalidade.TabIndex = 12;
@@ -178,7 +179,7 @@
             // 
             lblSexo.AutoSize = true;
             lblSexo.Font = new Font("Segoe UI", 12F);
-            lblSexo.Location = new Point(271, 71);
+            lblSexo.Location = new Point(271, 124);
             lblSexo.Name = "lblSexo";
             lblSexo.Size = new Size(43, 21);
             lblSexo.TabIndex = 10;
@@ -188,63 +189,64 @@
             // 
             lblDataNascimento.AutoSize = true;
             lblDataNascimento.Font = new Font("Segoe UI", 12F);
-            lblDataNascimento.Location = new Point(130, 71);
+            lblDataNascimento.Location = new Point(130, 124);
             lblDataNascimento.Name = "lblDataNascimento";
             lblDataNascimento.Size = new Size(93, 21);
             lblDataNascimento.TabIndex = 9;
             lblDataNascimento.Text = "Nascimento";
             // 
-            // comboBox1
+            // cmbSexo
             // 
-            comboBox1.Font = new Font("Segoe UI", 12F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Feminino", "Masculino" });
-            comboBox1.Location = new Point(272, 95);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(128, 29);
-            comboBox1.TabIndex = 8;
+            cmbSexo.Font = new Font("Segoe UI", 12F);
+            cmbSexo.FormattingEnabled = true;
+            cmbSexo.Items.AddRange(new object[] { "Feminino", "Masculino" });
+            cmbSexo.Location = new Point(272, 148);
+            cmbSexo.Name = "cmbSexo";
+            cmbSexo.Size = new Size(128, 29);
+            cmbSexo.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // dtpNascimento
             // 
-            dateTimePicker1.Font = new Font("Segoe UI", 12F);
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(130, 95);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(126, 29);
-            dateTimePicker1.TabIndex = 7;
+            dtpNascimento.Font = new Font("Segoe UI", 12F);
+            dtpNascimento.Format = DateTimePickerFormat.Short;
+            dtpNascimento.Location = new Point(130, 148);
+            dtpNascimento.Name = "dtpNascimento";
+            dtpNascimento.Size = new Size(126, 29);
+            dtpNascimento.TabIndex = 3;
             // 
             // mskCPF
             // 
             mskCPF.Font = new Font("Segoe UI", 12F);
-            mskCPF.Location = new Point(130, 29);
+            mskCPF.Location = new Point(130, 82);
             mskCPF.Mask = "000\\.000\\.000-00";
             mskCPF.Name = "mskCPF";
             mskCPF.Size = new Size(125, 29);
-            mskCPF.TabIndex = 6;
+            mskCPF.TabIndex = 1;
             // 
             // txtNome
             // 
             txtNome.Font = new Font("Segoe UI", 12F);
-            txtNome.Location = new Point(261, 29);
+            txtNome.Location = new Point(261, 82);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(361, 29);
-            txtNome.TabIndex = 4;
+            txtNome.Size = new Size(401, 29);
+            txtNome.TabIndex = 2;
             // 
             // lblNome
             // 
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 12F);
-            lblNome.Location = new Point(261, 11);
+            lblNome.Location = new Point(261, 58);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(53, 21);
             lblNome.TabIndex = 5;
             lblNome.Text = "Nome";
+            lblNome.Click += lblNome_Click;
             // 
             // lblCPF
             // 
             lblCPF.AutoSize = true;
             lblCPF.Font = new Font("Segoe UI", 12F);
-            lblCPF.Location = new Point(130, 11);
+            lblCPF.Location = new Point(130, 59);
             lblCPF.Name = "lblCPF";
             lblCPF.Size = new Size(37, 21);
             lblCPF.TabIndex = 3;
@@ -254,7 +256,7 @@
             // 
             lblRM.AutoSize = true;
             lblRM.Font = new Font("Segoe UI", 12F);
-            lblRM.Location = new Point(24, 11);
+            lblRM.Location = new Point(24, 58);
             lblRM.Name = "lblRM";
             lblRM.Size = new Size(34, 21);
             lblRM.TabIndex = 1;
@@ -263,7 +265,7 @@
             // txtRM
             // 
             txtRM.Font = new Font("Segoe UI", 12F);
-            txtRM.Location = new Point(24, 29);
+            txtRM.Location = new Point(24, 82);
             txtRM.MaxLength = 6;
             txtRM.Name = "txtRM";
             txtRM.Size = new Size(100, 29);
@@ -272,10 +274,10 @@
             // btnNotepad
             // 
             btnNotepad.Font = new Font("Segoe UI", 12F);
-            btnNotepad.Location = new Point(145, 238);
+            btnNotepad.Location = new Point(145, 291);
             btnNotepad.Name = "btnNotepad";
             btnNotepad.Size = new Size(110, 50);
-            btnNotepad.TabIndex = 17;
+            btnNotepad.TabIndex = 10;
             btnNotepad.Text = "Bloco de Notas";
             btnNotepad.UseVisualStyleBackColor = true;
             btnNotepad.Click += btnNotepad_Click;
@@ -283,7 +285,8 @@
             // pnlPrincipal
             // 
             pnlPrincipal.Anchor = AnchorStyles.None;
-            pnlPrincipal.BorderStyle = BorderStyle.FixedSingle;
+            pnlPrincipal.BackColor = Color.PowderBlue;
+            pnlPrincipal.BorderStyle = BorderStyle.Fixed3D;
             pnlPrincipal.Controls.Add(pictureBox1);
             pnlPrincipal.Controls.Add(btnLimpar);
             pnlPrincipal.Controls.Add(lsbDados);
@@ -299,23 +302,23 @@
             pnlPrincipal.Controls.Add(btnNotepad);
             pnlPrincipal.Controls.Add(mskCPF);
             pnlPrincipal.Controls.Add(btnCalc);
-            pnlPrincipal.Controls.Add(dateTimePicker1);
+            pnlPrincipal.Controls.Add(dtpNascimento);
             pnlPrincipal.Controls.Add(btnSair);
-            pnlPrincipal.Controls.Add(comboBox1);
+            pnlPrincipal.Controls.Add(cmbSexo);
             pnlPrincipal.Controls.Add(lblDataNascimento);
             pnlPrincipal.Controls.Add(btnExibir);
             pnlPrincipal.Controls.Add(lblSexo);
             pnlPrincipal.Controls.Add(lblNaturalidade);
-            pnlPrincipal.Controls.Add(comboBox2);
-            pnlPrincipal.Location = new Point(58, 57);
+            pnlPrincipal.Controls.Add(cmbNaturalidade);
+            pnlPrincipal.Location = new Point(124, 36);
             pnlPrincipal.Name = "pnlPrincipal";
-            pnlPrincipal.Size = new Size(652, 373);
+            pnlPrincipal.Size = new Size(693, 441);
             pnlPrincipal.TabIndex = 23;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(24, 68);
+            pictureBox1.Location = new Point(24, 121);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 82);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -327,7 +330,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(763, 514);
+            BackColor = Color.LightSteelBlue;
+            ClientSize = new Size(895, 514);
             Controls.Add(pnlPrincipal);
             Name = "frmUsuarios";
             StartPosition = FormStartPosition.CenterScreen;
@@ -351,12 +355,12 @@
         private Button btnSair;
         private Button btnLimpar;
         private Button btnExibir;
-        private ComboBox comboBox2;
+        private ComboBox cmbNaturalidade;
         private Label lblNaturalidade;
         private Label lblSexo;
         private Label lblDataNascimento;
-        private ComboBox comboBox1;
-        private DateTimePicker dateTimePicker1;
+        private ComboBox cmbSexo;
+        private DateTimePicker dtpNascimento;
         private MaskedTextBox mskCPF;
         private TextBox txtNome;
         private Label lblNome;

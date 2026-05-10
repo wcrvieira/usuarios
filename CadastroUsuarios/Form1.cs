@@ -77,8 +77,29 @@ namespace CadastroUsuarios
         {
             lsbDados.Items.Clear();
             lsbDados.Items.Add("Dados do usuário");
-            lsbDados.Items.Add("RM: "+txtRM.Text);
-            lsbDados.Items.Add("CPF: "+mskCPF.Text);
+            lsbDados.Items.Add("RM: " + txtRM.Text);
+            lsbDados.Items.Add("CPF: " + mskCPF.Text);
+            lsbDados.Items.Add("Nome: " + txtNome.Text);
+            lsbDados.Items.Add("Data de nascimento: " + dtpNascimento.Text);
+            lsbDados.Items.Add("Sexo: " + cmbSexo.Text);
+            lsbDados.Items.Add("Naturalidade: " + cmbNaturalidade.Text);
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            lsbDados.Items.Clear();
+            txtRM.Clear();
+            mskCPF.Clear();
+            txtNome.Clear();
+            dtpNascimento.Text = "";
+            cmbSexo.Text = "";
+            cmbNaturalidade.Text = "";
+            txtRM.Focus();
+        }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
